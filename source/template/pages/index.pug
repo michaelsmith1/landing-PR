@@ -1,0 +1,408 @@
+extends ../_template
+
+block variables
+  - var title = 'Персональный PR-менеджер'
+
+block content
+  header.header
+    .header__menu.wow.zoomInUp
+      a(href='/').logo
+        img.logo__img(alt='logo' src='assets/img/logo.png')
+        br
+        span.sub-logo Персональный PR-менеджер
+      .nav
+        .burger
+          .burger-top
+          .burger-center
+          .burger-bottom
+        .nav__cont
+          nav.nav-nav
+            ul.nav-nav__list
+              li.nav-nav__list__item
+                a(href='#1').nav-nav__list__item__link Клиенты и задачи
+              li.nav-nav__list__item
+                a(href='#2').nav-nav__list__item__link Услуги
+              li.nav-nav__list__item
+                a(href='#3').nav-nav__list__item__link Реальные кейсы
+              li.nav-nav__list__item
+                a(href='#4').nav-nav__list__item__link Блог о PR
+        .nav__mail
+          a.nav__mail__link(href='mailto:nikazebra@mail.ru') nikazebra@mail.ru
+      .callback
+        a.callback__link(href='#callback1') Связаться
+
+    form.callback-form.fancy#callback
+      label.callback-form__label
+        input(type='email' name='email' placeholder='ВАШ EMAIL').callback-form__input.input_mail
+      label.callback-form__label
+        input(type='tel' name='phone' placeholder='НОМЕР ТЕЛЕФОНА').callback-form__input.input_phone
+      button(type='submit').callback-form__submit
+        | Оставить заявку
+    .header__offer
+      .offer
+        .offer__woman.wow.zoomInLeft
+          img.woman-img(alt='men-author' src='assets/img/woman-top.png')
+          img.woman-img_mobile(alt='men-author-mini' src='assets/img/woman-top-320.png')
+        .offer__promo.wow.slideInUp
+          .promo
+            .promo__item.promo__item_1.active
+              p.promo1__p Я работаю с самым важным – именем и репутацией. Делаю из обычного человека узнаваемый бренд. Создаю репутацию, добиваюсь публикаций, исправляю поисковую выдачу, берусь за комплексное продвижение.
+            .promo__item.promo__item_2
+              p.promo2__p Основатель и директор PR-агентства Zebra Company. Работаем в России, Украине, Казахстане. Это отличный ресурс, который помогает решать сложные задачи и брать проекты «под ключ».
+            .promo__item.promo__item_3
+              p.promo3__p В соавторстве с Интернет-буржуем Андреем Рябых выпустила книгу «Персональный бренд: создание и продвижение». Тираж раскупили за 4 месяца, а книгу интернет-магазин Ozon признал бестселлером.
+            .promo__item.promo__item_4
+              p.promo4__p Преподаю PR-технологии в СПбГУ и Высшей школе экономике. Провожу тренинги и даю персональные консультации для руководителей и владельцев бизнеса. Хотите продвигаться без чьей-либо помощи? Хорошо, я научу.
+
+            .akcia Акция, бесплатная консультация!
+            script(src="http://megatimer.ru/s/cdd7b67aed5f032296175d48e4be8238.js")
+            form.form-mailing.form-mailing_fd
+              span Отправьте вашу заявку
+              .form-mailing__cont
+                label.form-mailing__label
+                  input(type='email' name='email' placeholder='Номер телефона').form-mailing__input
+                button(type='submit').callback-form__submit.form-mailing__sbm
+                  | Отправить
+
+        ul.promo-list.wow.slideInRight
+          li.promo-list__item.active
+            | Персональный PR-менеджер
+          li.promo-list__item
+            | Директор PR-агентства
+          li.promo-list__item
+            | Автор книги
+          li.promo-list__item
+            | Бизнес-консультант
+
+
+  main.main
+    section.section1#1
+      .container
+        h2.wow.fadeInUp Для кого работаю и какие задачи решаю
+        ul.clients
+          li.clients__item.wow.fadeInLeft
+            .clients__item__cont
+              img.client-img(alt='client-1' src='assets/img/client-1.png')
+              .clients__info
+                .client-title.title ПЕРВЫЕ ЛИЦА КОМПАНИЙ
+                .client-text.text Типичная ситуация: работы много, на личный брендинг времени нет. Я позабочусь о репутации, разгружу рабочий график и закрою вопросы, связанные с пиаром и продвижением. Уже 10 лет я руковожу PR-агентством, поэтому знаю, как работать с первыми лицами компании. Понимаю, о чем говорить и о чем умолчать. Мы обозначим цели на старте и пропишем условия конфиденциальности в договоре.
+          li.clients__item.wow.fadeInRight
+            .clients__item__cont
+              img.client-img(alt='client-2' src='assets/img/client-2.png')
+              .clients__info
+                .client-title.title ЗВЕЗДЫ ШОУ-БИЗНЕСА
+                .client-text.text Не пытайтесь совместить творческий и рутинные процессы. Такой подход опасен и приводит к творческому застою и нервным срывам. В работе со звездами я выступаю как пресс-секретарь: составляю и рассылаю пресс-релизы, договариваюсь о публикациях и выступлениях, контролирую выпуск статей и рекламных материалов. Расслабьтесь и занимайтесь творчеством, необходимую рутину я возьму на себя.
+          li.clients__item.wow.fadeInLeft
+            .clients__item__cont
+              img.client-img(alt='client-3' src='assets/img/client-3.png')
+              .clients__info
+                .client-title.title ЧАСТНЫЕ СПЕЦИАЛИСТЫ
+                .client-text.text Я помогаю врачам, адвокатам, психологам, фитнес-тренерам – тем, кто хочет расширить целевую аудиторию и получить больше заказов. Начинающим специалистам подойдет формат почасовых консультаций, на которых мы разбираем ошибки и я даю ответы на вопросы клиента. Также я могу разработать отдельно PR-стратегию и передать ее вам для реализации. Вы достигнете результатов сами, выполняя прописанные указания. Это дешевле, чем продвижение «под ключ» и также эффективно.
+
+
+    section.section2#2
+      h2.h2_bottom.wow.fadeInUp Чем занимаюсь
+      .container
+        ul.than__list
+          li.than__list__item.wow.fadeInUp
+            .than-img.than-img_1
+            .than__info
+              .than-title.title Комплексное продвижение персоны
+              .than-text.text Работаем сразу по всем фронтам: публикации, съемки, организация выступлений, партнерства, раскрутка в соцсетях, наполнение сайта и прочее. Всё под контролем и личной ответственностью.
+          li.than__list__item.wow.fadeInUp
+            .than-img.than-img_2
+            .than__info
+              .than-title.title Организация публикаций в СМИ
+              .than-text.text Помогаю попадать на страницы нужных изданий на регулярной основе. С командой ищем инфоповоды, пишем текст, рассылаем пресс-релизы и добиваемся публикации в заявленное время.
+          li.than__list__item.wow.fadeInLeft
+            .than-img.than-img_3
+            .than__info
+              .than-title.title Ведение страниц в социальных сетях
+              .than-text.text Работаю с личными аккаунтами в «ВКонтакте», Facebook и Instagram. Моя команда генерирует интересный контент, ведет ваши страницы, расширяет аудиторию подписчиков и работает с отзывами.
+          li.than__list__item.wow.fadeInRight
+            .than-img.than-img_4
+            .than__info
+              .than-title.title Создание персональных сайтов
+              .than-text.text В моей команде есть копирайтеры, дизайнеры, верстальщики. Я руковожу процессом и презентую готовый сайт, который решает ваши задачи.
+          li.than__list__item.wow.fadeInUpBig
+            .than-img.than-img_5
+            .than__info
+              .than-title.title Написание и продвижение книг
+              .than-text.text Собираем ваши идеи и мысли, структурируем их и создаем сильный, интересный текст. Либо редактируем ваш вариант, как удобнее. Помогаем с выпуском книги и ее продвижением.
+          li.than__list__item.wow.fadeInUpBig
+            .than-img.than-img_6
+            .than__info
+              .than-title.title Консультация по личному брендингу
+              .than-text.text Разрешаю сложные ситуации, даю советы и разбираю конкретные ситуации. Консультирую лично и в скайпе, минимальное время консультации – один час.Разрешаю сложные ситуации, даю советы и разбираю конкретные ситуации. Консультирую лично и в скайпе, минимальное время консультации – один час.
+
+
+    section.section3#3
+      h2 Реальные кейсы
+      .container.container_mod
+        .slider-wrap
+          i.fa.fa-angle-left.case-control.case-control-prev.wow.zoomIn
+          i.fa.fa-angle-right.case-control.case-control-next.wow.zoomIn
+          .slider-case
+            .slide
+              .slide__cont
+                .image-wrap.wow.fadeInLeftBig
+                  img(src='assets/img/boykov1.jpg', alt='case')
+                ul.wow.fadeInRightBig
+                  li
+                    .title Клиент
+                    .info
+                      span Александр Бойков
+                      span
+                        | Основатель и CEO хостинговой компании Timeweb (ТОП-3), инвестор клуба VentureClub.
+                  li
+                    .title Задача
+                    .info
+                      | Вывести Александра в публичное поле, повысить узнаваемость в деловых кругах. Обеспечить публикации в IT и деловых изданиях.
+                  li
+                    .title Услуги
+                    .info
+                      | Разработка стратегии продвижения. Организация бизнес-съемок и интервью. Корректировка публичного образа.
+                      | Media Relations, организация публикаций в СМИ.  Подготовка имиджевых материалов и справок, ведение переговоров с партнерами. Продвижение в социальных сетях.
+                  li
+                    .title Результат
+                    .info
+                      | Более 90 публикаций в СМИ, из них 6 интервью. Facebook Александра превращен в эффективный рабочий инструмент, ключевые посты набирают более 300 лайков. Налажены связи с ФРИИ, iDealMachine и другими площадками для отбора стартапов. В марте 2017 года Александр запустил платформу Buzzweb (штаб в США).
+            .slide
+              .slide__cont
+                .image-wrap
+                  img(src='assets/img/What-to-Wear-to-a-Wedding-1.jpg', alt='case')
+                ul
+                  li
+                    .title Клиент
+                    .info
+                      span И., известный адвокат
+                      span Имя клиента не разглашается (NDA)
+                  li
+                    .title Задача
+                    .info
+                      | Повысить эффективность работы медиа-отдела и подобрать новые кадры: руководителя PR-отдела и пресс-атташе для адвоката.
+                  li
+                    .title Услуги
+                    .info
+                      | Аудит PR-отдела. Консалтинг по вопросам media relations и SMM. Разработка системы KPI для сотрудников медиа-отдела. Размещение вакансий, сбор резюме, оценка кандидатов, проведение собеседований.
+                  li
+                    .title Результат
+                    .info
+                      | Наладили работу медиа-отдела, распределили равномерно обязанности между членами команды, нашли зоны роста и ввели критерии эффективности для каждого сотрудника. Подобрали руководителя медиа-отдела и пресс-атташе для первого лица компании. Сотрудники объединения успешно запустили несколько новых информационных проектов, привлекающих большое общественное внимание.
+            .slide
+              .slide__cont
+                .image-wrap
+                  img(src='assets/img/SLIsa_croper_ru.jpeg', alt='case')
+                ul
+                  li
+                    .title Клиент
+                    .info
+                      span Б., директор федеральной сети магазинов
+                      span Имя клиента не разглашается (NDA)
+                  li
+                    .title Задача
+                    .info
+                      | Продвижение первого лица компании через социальные сети. Разработка стратегии продвижения в Facebook.
+                  li
+                    .title Услуги
+                    .info
+                      | Консультации по PR и продвижению в соцсетях. Разработка стратегии и контент-плана для личной страницы в Facebook. Подготовка текстов для страницы на основе тезисов. Техническое управление страницей (1 месяц).
+                  li
+                    .title Результат
+                    .info
+                      | За тестовый месяц коэффициент вовлеченности (engagement rate) личной страницы Б. в Facebook в среднем на пост составил 27%.
+            .slide
+              .slide__cont
+                .image-wrap
+                  img(src='assets/img/8CiKP_croper_ru.jpeg', alt='case')
+                ul
+                  li
+                    .title Клиент
+                    .info
+                      span А., пластический хирург
+                      span Имя клиента не разглашается (NDA)
+                  li
+                    .title Задача
+                    .info
+                      | Необходимо было показать А. аудитории как эксперта высокого класса, который работает по мировым стандартам в области эстетической хирургии.
+                  li
+                    .title Услуги
+                    .info
+                      | Консультации по PR. Media relations (работа со СМИ). Разработка фирменного стиля. Разработка личного сайта
+                      | Копирайтинг для личного сайта, в том числе ведение блога.
+                  li
+                    .title Результат
+                    .info
+                      | Через 9 месяцев наших работ поток входящих звонков в клинику с запросом на консультацию именно у А. увеличился в 2 раза. Рабочий график специалиста теперь расписан на несколько месяцев вперед.
+            .slide
+              .slide__cont
+                .image-wrap
+                  img(src='assets/img/443.png', alt='case')
+                ul
+                  li
+                    .title Клиент
+                    .info
+                      span Ника Зебра
+                      span (Вероника Кириллова) — генеральный директор PR-агентства Zebra Company.
+                  li
+                    .title Задача
+                    .info
+                      | Смена имиджа первого лица компании для привлечения клиентов более высокого уровня.
+                  li
+                    .title Услуги
+                    .info
+                      | Анализ текущего имиджа и определение ожиданий аудитории. Выбор дополнительных характеристик для нового имиджа. Разработка нового визуального образа. Корректировка имиджа персоны. Адаптация пресс-пакета (справка, биография, др.). Смена характера коммуникаций с целевой аудиторией.
+                  li
+                    .title Результат
+                    .info
+                      | Новый имидж и стилистика общения генерального директора PR-агентства Zebra Company Ники Зебры (Вероники Кирилловой) позволили улучшить качество общения с новой аудиторией — первыми лицами компаний. За счет более серьезного и дорогого образа доверие к персоне выросло, что отмечается и самими представителями целевой аудитории, и ростом среднего чека на PR-услуги.
+            .slide
+              .slide__cont
+                .image-wrap
+                  img(src='assets/img/IMG_0820-02-08-17-14-13.jpg', alt='case')
+                ul
+                  li
+                    .title Клиент
+                    .info
+                      span Николай Додонов
+                      span
+                        | Предприниматель и директор компании «ЕТ-Россия». Автор книги «Анти тайм-менеджмент».
+                  li
+                    .title Задача
+                    .info
+                      | Продвижение персонального бренда Николая, как эксперта по вопросам личной эффективности. Подбор личного ассистента и обучение PR.
+                  li
+                    .title Услуги
+                    .info
+                      | PR-консалтинг. Продвижение книги «Анти тайм-менеджмент». Работа с лидерами мнений. Media relations. Организация фотосессии.
+                  li
+                    .title Результат
+                    .info
+                      | Книга Николая «Антитайм-менеджмент» в короткие сроки стала бестселлером на Ozon, издательство выступило с предложением напечатать дополнительный тираж. Благодаря слаженной работе Ники и ассистента, Николай укрепил свой статус эксперта по личной эффективности и управлению временем.
+
+
+    section.section4#4
+      h2.h2_bottom.wow.slideInUp Обо мне говорят
+      .container
+        ul.fbacks__list
+          li.fbacks__list__item.wow.slideInLeft
+            .fbacks__photo
+              img(alt='fbacks-people' src='assets/img/200.jpg').fbacks-img
+            .fbacks__info
+              .fbacks-title.title Ярослав Михайлов, юрист
+              a.face-link(href='#' role='nofollow' target='_blank')
+                i(class='fa fa-facebook')
+                | Facebook
+              .fbacks-text.text Для меня всегда было непонятно, почему о ком-то пишут в журналах, а о ком-то нет, даже если второй человек профессиональнее и умнее. Теперь мне все понятно. Ника составила план на год, по нему и идём. Сейчас журналисты федеральных СМИ уже сами обращаются за комментариями. Нравится конкретность рекомендаций «раз-два-три», нет воды и пустой болтовни. Ее команда включается в решение задач оперативно. Сотрудничеством очень доволен.
+          li.fbacks__list__item.wow.slideInRight
+            .fbacks__photo
+              img(alt='fbacks-people' src='assets/img/504.jpg').fbacks-img
+            .fbacks__info
+              .fbacks-title.title Алексей Орлов, зам.председателя комитета МП Ленинградской области
+              a.face-link(href='#' role='nofollow' target='_blank')
+                i(class='fa fa-facebook')
+                | Facebook
+              .fbacks-text.text Давно следил за Никой в соцсетях, нравился контент, четкость и прагматичность. Когда обратился лично, получил конкретную выжимку и набор инструментов, которыми сразу можно пользоваться. Она отличный специалист, поделилась такими важными мелочами в продвижении, о которых даже не задумывался, но которые дают результат. Одним словом, рекомендую.
+          li.fbacks__list__item.wow.zoomInUp
+            .fbacks__photo
+              img(alt='fbacks-people' src='assets/img/210.jpg').fbacks-img
+            .fbacks__info
+              .fbacks-title.title Александр Бойков, ex-CEO Timeweb, CEO Buzzweb (США)
+              a.face-link(href='#' role='nofollow' target='_blank')
+                i(class='fa fa-vk')
+                | Vkontakte
+              .fbacks-text.text Работаю с Никой уже год. Подкупил прагматичный и фундаментальный подход. Не сделать красивую картинку, а измениться изнутри. Ставить цели и выбирать конкретные инструменты. Сделали больше 100 публикаций, несколько крупных интервью и публичных выступлений. Это улучшило репутацию Timeweb, создало поток из 100 заявок на инвестиции в месяц. Новый стартап за 2 месяца привлёк партнёров и ключевых специалистов. Доволен результатами и сотрудничеством. Рекомендую.
+          li.fbacks__list__item.wow.zoomInUp
+            .fbacks__photo
+              img(alt='fbacks-people' src='assets/img/545n.jpg').fbacks-img
+            .fbacks__info
+              .fbacks-title.title Катрин Дюар, представитель программы Human 2.0 в России
+              a.face-link(href='#' role='nofollow' target='_blank')
+                i(class='fa fa-facebook')
+                | Facebook
+              .fbacks-text.text Я работаю во многих сферах: ритеил, маркетинг, ивенты и др. Я бы не смогла разобраться со всем, если бы не обращалась к профессионалам. Среди всех специалистов с кем мы общались, У Ники самая сильная структура. Поговорив в течение часа, я получила “кувалдой по голове”, произошло моментальное отрезвление. Я осознала, какие были допущены ошибки, и что теперь делать. Рекомендую 100%.
+
+    section.section5
+      h2.wow.slideInUp Наши показатели
+      .container
+        .preview
+
+          .preview__item.wow.zoomInUp
+            .integer 100
+            .for-integer Клиентов
+              span.plus +
+
+          .preview__item.wow.zoomInUp
+            .integer 250
+            .for-integer Решенных задач
+
+          .preview__item.wow.zoomInUp
+            .integer 150
+            .for-integer Кейсов
+
+          .preview__item.wow.zoomInUp
+            .integer 80
+            .for-integer Проведенных <br> мероприятий
+
+    section.section6
+      .container
+        .mailing
+          .mailing__head.wow.slideInLeft РАССЫЛКА
+          .mailing__deviz.wow.slideInRight «Личный бренд своими руками»
+          .mailing__text.wow.slideInUp
+            p Хотите знать, как продвигать себя самостоятельно? Тогда получайте полезные материалы на почту. «Личный бренд своими руками» – это рассылка без болтовни. Только конкретика: кейсы, советы и проверенные механики.
+          .mailing__form.wow.slideInUp
+            form.form-mailing
+              label.form-mailing__label
+                input(type='email' name='email' placeholder=' ВВЕДИТЕ E-MAIL').form-mailing__input
+              button(type='submit').callback-form__submit.form-mailing__sbm
+                i(class='fa fa-envelope-o')
+                | подписаться
+    section.section7
+      .container.footer-form
+        .footer-form__item.photo.photo_form.wow.slideInLeft
+          img.photo_form__img(alt='form-people' src='assets/img/woman-small.png')
+        form.footer-form__item.callback-form.wow.slideInUp
+          .callback-form__text
+            span Делаю так, чтобы о вас узнали.
+            br
+            span Без магии и серых схем.
+          span.callback-form__author Ника Зебра
+          label.callback-form__label
+            input(type='email' name='email' placeholder='ВАШ EMAIL').callback-form__input.input_mail
+          label.callback-form__label
+            input(type='tel' name='phone' placeholder='НОМЕР ТЕЛЕФОНА').callback-form__input.input_phone
+          button(type='submit').callback-form__submit
+            i(class='fa fa-handshake-o')
+            | обсудить сотрудничество
+        ul.footer-form__item.favorite-list.wow.slideInRight
+          li.favorite-list__item Работаю в рамках договора о конфиденциальности (NDA)
+          li.favorite-list__item Выполняю поставленные цели, KPI прописываю в договоре
+          li.favorite-list__item Оказываю весь комплекс PR-услуг для персон
+  footer.footer
+    .footer__item.footer__copy
+      .copyright
+        | Персональный PR-менеджер.
+        br
+        | Все права защищены. 2009
+    .footer__item.footer__soc
+      ul.soc-list
+        li.soc-list__items
+          a(href='#' rel='nofollow' target='_blank').soc-list__items__link
+            i(class='fa fa-facebook')
+        li.soc-list__items
+          a(href='#' rel='nofollow' target='_blank').soc-list__items__link
+            i(class='fa fa-vk')
+        li.soc-list__items
+          a(href='#' rel='nofollow' target='_blank').soc-list__items__link
+            i(class='fa fa-youtube-play')
+    .footer__item.footer__quest
+      .quest
+        p Остались вопросы?
+        span Пишите –
+        a.mail-link(href='mailto:#')  pr-mail@ya.ru
+    .footer__item.footer__conf
+      .confidential
+        a.confidential__link(href='#') Политика конфиденциальности
+
+

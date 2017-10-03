@@ -1,0 +1,28 @@
+@mixin screen() {
+  @media screen and (max-width: 1230px) {
+    @content;
+  }
+}
+
+@mixin tablets-albom() {
+  @media screen and (max-width: 980px) {
+    @content;
+  }
+}
+
+@mixin tablets() {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin phones() {
+  @media screen and (max-width: 540px) {
+    @content;
+  }
+}
+@mixin ph1() {
+  @media screen and (max-width: 360px) {
+    @content;
+  }
+}
